@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Location from './pages/Location'
 import NotFound from './pages/404'
-
+import APropos from './pages/a-propos'
 function App() {
   return (
     <>
@@ -16,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/location/:id" element={<Location />} />
+        <Route path="/a-propos" element={<APropos />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
